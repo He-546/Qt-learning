@@ -33,6 +33,12 @@
     <addaction name="actionSave"/>
     <addaction name="actionSave_As"/>
     <addaction name="separator"/>
+    <addaction name="actionRecent_1"/>
+    <addaction name="actionRecent_2"/>
+    <addaction name="actionRecent_3"/>
+    <addaction name="actionRecent_4"/>
+    <addaction name="actionRecent_5"/>
+    <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -202,6 +208,31 @@
   <action name="actionAbout_Qt">
    <property name="text">
     <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionRecent_1">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionRecent_2">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionRecent_3">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionRecent_4">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionRecent_5">
+   <property name="text">
+    <string/>
    </property>
   </action>
  </widget>
