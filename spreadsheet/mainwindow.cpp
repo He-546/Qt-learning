@@ -38,10 +38,19 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionExit, SIGNAL(triggered()), this, SLOT(close()));
     connect(spreadsheet,SIGNAL(modified()),this,SLOT(spreadsheetModifed()));
 
+    // Edit menu
+    connect(ui->actionCut,SIGNAL(triggered()), spreadsheet, SLOT(cut()));
+    connect(ui->actionCopy,SIGNAL(triggered()), spreadsheet, SLOT(copy()));
+    connect(ui->actionPaste,SIGNAL(triggered()), spreadsheet, SLOT(paste()));
+    connect(ui->actionDelete,SIGNAL(triggered()), spreadsheet, SLOT(del()));
+    connect(ui->actionFind,SIGNAL(triggered()), this, SLOT(find()));
+
     setCentralWidget(spreadsheet);
 
     readSettings();
     setCurrentFile("");
+
+    findDialog=nullptr;
 }
 
 MainWindow::~MainWindow()
@@ -228,4 +237,25 @@ void MainWindow::openRecentFile()
         if (action)
             loadFile(action->data().toString());
     }
+}
+
+// find
+
+void MainWindow::find()
+{
+    if (!findDialog) {
+        findDialog = new FindDialog(this);
+        connect(findDialog, SIGNAL(findNext(const QString &,
+                                            Qt::CaseSensitivity)),
+                spreadsheet, SLOT(findNext(const QString &,
+                                           Qt::CaseSensitivity)));
+        connect(findDialog, SIGNAL(findPrevious(const QString &,
+                                                Qt::CaseSensitivity)),
+                spreadsheet, SLOT(findPrevious(const QString &,
+                                               Qt::CaseSensitivity)));
+    }
+
+    findDialog->show();
+    findDialog->raise();
+    findDialog->activateWindow();
 }

@@ -17,10 +17,19 @@ public:
     bool writeFile(const QString& fileName);
     bool readFile(const QString &fileName);
 
+    QTableWidgetSelectionRange selectedRange() const;
+
 signals:
     void modified();
 
 public slots:
+    //Edit
+    void cut();
+    void copy();
+    void paste();
+    void del();
+    void findNext(const QString &str, Qt::CaseSensitivity cs);
+    void findPrevious(const QString &str, Qt::CaseSensitivity cs);
 
 private slots:
     void somethingChanged();

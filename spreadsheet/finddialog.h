@@ -17,6 +17,14 @@ public:
 
 private:
     Ui::FindDialog *ui;
+
+signals:
+    void findNext(const QString &str, Qt::CaseSensitivity cs);
+    void findPrevious(const QString &str, Qt::CaseSensitivity cs);
+
+private slots:
+    void findClicked();
+    void enableFindButton(const QString &text);
 };
 
 #endif // FINDDIALOG_H

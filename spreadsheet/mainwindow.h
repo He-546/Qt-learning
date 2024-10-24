@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include "spreadsheet.h"
+#include "finddialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -29,7 +30,13 @@ private:
     QAction* recentFileActions[MaxRecentFiles];
     QAction* separatorAction;
 
+    QString cutStr;
+
+    FindDialog *findDialog;
+
 private slots:
+
+    // File
     void newFile();
     void open();
     bool save();
@@ -37,6 +44,10 @@ private slots:
     void edit();
     void spreadsheetModifed();
     void openRecentFile();
+
+    //Edit
+    void find();
+
 private:
     bool okToContinue();
     void setCurrentFile(const QString &fileName);

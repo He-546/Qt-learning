@@ -1316,31 +1316,17 @@ build/debug/obj/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../anaconda3/include/qt/QtWidgets/qtabbar.h \
 		../../../../anaconda3/include/qt/QtWidgets/qrubberband.h \
 		build/debug/ui/ui_mainwindow.h \
-		../../../../anaconda3/include/qt/QtCore/QVariant \
-		../../../../anaconda3/include/qt/QtWidgets/QAction \
-		../../../../anaconda3/include/qt/QtWidgets/qaction.h \
-		../../../../anaconda3/include/qt/QtWidgets/qactiongroup.h \
-		../../../../anaconda3/include/qt/QtWidgets/QApplication \
-		../../../../anaconda3/include/qt/QtWidgets/qapplication.h \
-		../../../../anaconda3/include/qt/QtCore/qcoreapplication.h \
-		../../../../anaconda3/include/qt/QtCore/qeventloop.h \
-		../../../../anaconda3/include/qt/QtWidgets/qdesktopwidget.h \
-		../../../../anaconda3/include/qt/QtGui/qguiapplication.h \
-		../../../../anaconda3/include/qt/QtGui/qinputmethod.h \
-		../../../../anaconda3/include/qt/QtWidgets/QButtonGroup \
-		../../../../anaconda3/include/qt/QtWidgets/qbuttongroup.h \
-		../../../../anaconda3/include/qt/QtWidgets/QHeaderView \
-		../../../../anaconda3/include/qt/QtWidgets/qheaderview.h \
-		../../../../anaconda3/include/qt/QtWidgets/QMenu \
-		../../../../anaconda3/include/qt/QtWidgets/qmenu.h \
-		../../../../anaconda3/include/qt/QtWidgets/QMenuBar \
-		../../../../anaconda3/include/qt/QtWidgets/qmenubar.h \
-		../../../../anaconda3/include/qt/QtWidgets/QStatusBar \
-		../../../../anaconda3/include/qt/QtWidgets/qstatusbar.h \
-		../../../../anaconda3/include/qt/QtWidgets/QToolBar \
-		../../../../anaconda3/include/qt/QtWidgets/qtoolbar.h \
-		../../../../anaconda3/include/qt/QtWidgets/QWidget \
-		../../../../anaconda3/include/qt/QtCore/QDebug
+		../../../../anaconda3/include/qt/QtWidgets/QFileDialog \
+		../../../../anaconda3/include/qt/QtWidgets/qfiledialog.h \
+		../../../../anaconda3/include/qt/QtCore/qdir.h \
+		../../../../anaconda3/include/qt/QtCore/qfileinfo.h \
+		../../../../anaconda3/include/qt/QtWidgets/qdialog.h \
+		../../../../anaconda3/include/qt/QtCore/QDebug \
+		../../../../anaconda3/include/qt/QtWidgets/QMessageBox \
+		../../../../anaconda3/include/qt/QtWidgets/qmessagebox.h \
+		../../../../anaconda3/include/qt/QtCore/QSettings \
+		../../../../anaconda3/include/qt/QtCore/qsettings.h \
+		../../../../anaconda3/include/qt/QtGui/QCloseEvent
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/debug/obj/mainwindow.o mainwindow.cpp
 
 build/debug/obj/finddialog.o: finddialog.cpp finddialog.h \
@@ -1445,57 +1431,11 @@ build/debug/obj/finddialog.o: finddialog.cpp finddialog.h \
 		../../../../anaconda3/include/qt/QtCore/qfiledevice.h \
 		../../../../anaconda3/include/qt/QtGui/qvector2d.h \
 		../../../../anaconda3/include/qt/QtGui/qtouchdevice.h \
-		build/debug/ui/ui_finddialog.h \
-		../../../../anaconda3/include/qt/QtCore/QVariant \
-		../../../../anaconda3/include/qt/QtWidgets/QAction \
-		../../../../anaconda3/include/qt/QtWidgets/qaction.h \
-		../../../../anaconda3/include/qt/QtGui/qicon.h \
-		../../../../anaconda3/include/qt/QtWidgets/qactiongroup.h \
-		../../../../anaconda3/include/qt/QtWidgets/QApplication \
-		../../../../anaconda3/include/qt/QtWidgets/qapplication.h \
-		../../../../anaconda3/include/qt/QtCore/qcoreapplication.h \
-		../../../../anaconda3/include/qt/QtCore/qeventloop.h \
-		../../../../anaconda3/include/qt/QtWidgets/qdesktopwidget.h \
-		../../../../anaconda3/include/qt/QtGui/qguiapplication.h \
-		../../../../anaconda3/include/qt/QtGui/qinputmethod.h \
-		../../../../anaconda3/include/qt/QtWidgets/QButtonGroup \
-		../../../../anaconda3/include/qt/QtWidgets/qbuttongroup.h \
-		../../../../anaconda3/include/qt/QtWidgets/QCheckBox \
-		../../../../anaconda3/include/qt/QtWidgets/qcheckbox.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractbutton.h \
-		../../../../anaconda3/include/qt/QtWidgets/QHeaderView \
-		../../../../anaconda3/include/qt/QtWidgets/qheaderview.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractitemview.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractscrollarea.h \
-		../../../../anaconda3/include/qt/QtWidgets/qframe.h \
-		../../../../anaconda3/include/qt/QtCore/qabstractitemmodel.h \
-		../../../../anaconda3/include/qt/QtCore/qitemselectionmodel.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractitemdelegate.h \
-		../../../../anaconda3/include/qt/QtWidgets/qstyleoption.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractspinbox.h \
-		../../../../anaconda3/include/qt/QtGui/qvalidator.h \
-		../../../../anaconda3/include/qt/QtCore/qregularexpression.h \
-		../../../../anaconda3/include/qt/QtWidgets/qslider.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractslider.h \
-		../../../../anaconda3/include/qt/QtWidgets/qstyle.h \
-		../../../../anaconda3/include/qt/QtWidgets/qtabbar.h \
-		../../../../anaconda3/include/qt/QtWidgets/qtabwidget.h \
-		../../../../anaconda3/include/qt/QtWidgets/qrubberband.h \
-		../../../../anaconda3/include/qt/QtWidgets/QLabel \
-		../../../../anaconda3/include/qt/QtWidgets/qlabel.h \
-		../../../../anaconda3/include/qt/QtWidgets/QLineEdit \
-		../../../../anaconda3/include/qt/QtWidgets/qlineedit.h \
-		../../../../anaconda3/include/qt/QtGui/qtextcursor.h \
-		../../../../anaconda3/include/qt/QtGui/qtextformat.h \
-		../../../../anaconda3/include/qt/QtGui/qpen.h \
-		../../../../anaconda3/include/qt/QtGui/qtextoption.h \
-		../../../../anaconda3/include/qt/QtWidgets/QPushButton \
-		../../../../anaconda3/include/qt/QtWidgets/qpushbutton.h
+		build/debug/ui/ui_finddialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/debug/obj/finddialog.o finddialog.cpp
 
-build/debug/obj/spreadsheet.o: spreadsheet.cpp cell.h \
-		../../../../anaconda3/include/qt/QtWidgets/QTableWidgetItem \
-		../../../../anaconda3/include/qt/QtWidgets/qtablewidget.h \
+build/debug/obj/spreadsheet.o: spreadsheet.cpp ../../../../anaconda3/include/qt/QtWidgets/QMessageBox \
+		../../../../anaconda3/include/qt/QtWidgets/qmessagebox.h \
 		../../../../anaconda3/include/qt/QtWidgets/qtwidgetsglobal.h \
 		../../../../anaconda3/include/qt/QtGui/qtguiglobal.h \
 		../../../../anaconda3/include/qt/QtCore/qglobal.h \
@@ -1521,10 +1461,7 @@ build/debug/obj/spreadsheet.o: spreadsheet.cpp cell.h \
 		../../../../anaconda3/include/qt/QtCore/qversiontagging.h \
 		../../../../anaconda3/include/qt/QtGui/qtgui-config.h \
 		../../../../anaconda3/include/qt/QtWidgets/qtwidgets-config.h \
-		../../../../anaconda3/include/qt/QtWidgets/qtableview.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractitemview.h \
-		../../../../anaconda3/include/qt/QtWidgets/qabstractscrollarea.h \
-		../../../../anaconda3/include/qt/QtWidgets/qframe.h \
+		../../../../anaconda3/include/qt/QtWidgets/qdialog.h \
 		../../../../anaconda3/include/qt/QtWidgets/qwidget.h \
 		../../../../anaconda3/include/qt/QtGui/qwindowdefs.h \
 		../../../../anaconda3/include/qt/QtCore/qobjectdefs.h \
@@ -1599,6 +1536,21 @@ build/debug/obj/spreadsheet.o: spreadsheet.cpp cell.h \
 		../../../../anaconda3/include/qt/QtCore/qfiledevice.h \
 		../../../../anaconda3/include/qt/QtGui/qvector2d.h \
 		../../../../anaconda3/include/qt/QtGui/qtouchdevice.h \
+		../../../../anaconda3/include/qt/QtWidgets/QApplication \
+		../../../../anaconda3/include/qt/QtWidgets/qapplication.h \
+		../../../../anaconda3/include/qt/QtCore/qcoreapplication.h \
+		../../../../anaconda3/include/qt/QtCore/qeventloop.h \
+		../../../../anaconda3/include/qt/QtWidgets/qdesktopwidget.h \
+		../../../../anaconda3/include/qt/QtGui/qguiapplication.h \
+		../../../../anaconda3/include/qt/QtGui/qinputmethod.h \
+		../../../../anaconda3/include/qt/QtCore/QFile \
+		cell.h \
+		../../../../anaconda3/include/qt/QtWidgets/QTableWidgetItem \
+		../../../../anaconda3/include/qt/QtWidgets/qtablewidget.h \
+		../../../../anaconda3/include/qt/QtWidgets/qtableview.h \
+		../../../../anaconda3/include/qt/QtWidgets/qabstractitemview.h \
+		../../../../anaconda3/include/qt/QtWidgets/qabstractscrollarea.h \
+		../../../../anaconda3/include/qt/QtWidgets/qframe.h \
 		../../../../anaconda3/include/qt/QtCore/qabstractitemmodel.h \
 		../../../../anaconda3/include/qt/QtCore/qitemselectionmodel.h \
 		../../../../anaconda3/include/qt/QtWidgets/qabstractitemdelegate.h \
